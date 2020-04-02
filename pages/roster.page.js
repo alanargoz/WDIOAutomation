@@ -7,6 +7,10 @@ class RosterPage {
     return $('h3');
   }
 
+  get rosterItems() {
+    return $$('#hero-list > li');
+  }
+
   get wolverineItem() {
     return $('#hero-list > li:nth-of-type(1)');
   }
@@ -41,6 +45,15 @@ class RosterPage {
 
   get newItem() {
     return $('#hero-list > li:nth-of-type(6)');
+  }
+
+  /**
+   *
+   * @param {*} hero
+   */
+  addHero(hero) {
+    this.addHeroField.setValue(hero);
+    this.submitButton.click();
   }
 }
 
