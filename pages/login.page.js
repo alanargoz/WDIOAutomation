@@ -1,13 +1,13 @@
 class LoginPage {
   get headingText() {
-    return $('#id="login-title"');
+    return $('#login-title');
   }
   get emailLabel() {
     return $('#form-login > div:nth-of-type(1) > label');
   }
 
   get emailField() {
-    return $('input#loginEmail');
+    return $('#loginEmail');
   }
 
   get passwordLabel() {
@@ -15,19 +15,19 @@ class LoginPage {
   }
 
   get passwordField() {
-    return $('input#loginPassword');
+    return $('#loginPassword');
   }
 
   get rememberLoginCheckBox() {
-    return $('input#rememberLoginChk');
+    return $('#rememberLoginChk');
   }
 
   get rememberLoginLabel() {
-    return $('form#form-login  .form-check-label');
+    return $('#form-login  .form-check-label');
   }
 
   get submitButton() {
-    return $('form#form-login > .btn.btn-primary');
+    return $('#form-login > .btn.btn-primary');
   }
 
   get overlay() {

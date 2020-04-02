@@ -94,7 +94,7 @@ describe('Login Test Suite', () => {
     );
   });
 
-  it.only('Should remember login credentials', () => {
+  it('Should remember login credentials', () => {
     browser.url('');
 
     LoginPage.emailField.setValue('1@2.com');
